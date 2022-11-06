@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background-color: rgb(33, 33, 33);
+}
+
+* {
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.top-bar h1 {
+    height: min-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2%;
+    font-size: 300%;
+}
+
+.top-bar h1::after { /* Add an element with the content "", a background with white padding and gradient box, and a transparent border to show background (https://codyhouse.co/nuggets/css-gradient-borders) */
+    content: "";
+    display: block;
+    width: auto;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(90deg, rgba(244,142,0,1) 0%, rgba(247,76,0,1) 100%) border-box;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+.logo-container {
+    display: inline-block;
+}
+
+.logo-container::after {
+    content: "";
+    display: block;
+    width: auto;
+    height: auto;
+    background: linear-gradient(90deg, rgba(244,142,0,1) 0%, rgba(247,76,0,1) 100%);
+}
+
+.article {
+    padding: 0.5%;
+    margin-bottom: 2%;
+}
+
+.articles-list {
+    padding-right: 2%;
+}
+
+.article-top {
+    display: flex;
+    margin-bottom: 1%;
+}
+
+.article-top > * {
+    margin-right: 1%;
+}
+
+.article-top img {
+    width: 2%;
+}
+
+.article-content {
+    margin-left: 1%;
+    border-left: 3px solid black;
+    border-radius: 5px;
+}
+
+.article-text {
+    padding-left: 2%;
+}
